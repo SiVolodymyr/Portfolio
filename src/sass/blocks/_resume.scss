@@ -1,0 +1,126 @@
+.resume {
+    padding-top: 120px;
+    background-color: $main_color_1;
+
+    &__title {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+
+        @include before_circle_d;
+
+        &:before {
+            content: '';
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+    }
+
+    &__wrapper {
+        margin: 60px auto 0 auto;
+        width: 86.5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 13.8%;
+    }
+
+    &__column {
+        padding-left: 50px;
+
+        &-title {
+            position: relative;
+            z-index: 2;
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 20%;
+                border: 1px solid $main_color_2;
+                background-color: $main_color_1;
+                left: -50px;
+                top: 6px;
+            }
+        }
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            position: relative;
+
+            &:after {
+                content: '';
+                width: 1px;
+                height: 150%;
+                position: absolute;
+                top: -55px;
+                left: -43px;
+                background-color: $main_color_2;
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+        margin-top: 45px;
+
+        svg path {
+            fill: $main_color_2;
+        }
+
+        h4 {
+            padding-left: 56px;
+            margin: 0;
+        }
+
+        &-location {
+            padding-left: 56px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        &-head {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: -42px;
+                top: 19px;
+                width: 42px;
+                height: 1px;
+                background-color: $main_color_2;
+            }
+        }
+
+        &-icon {
+            position: absolute;
+            padding-left: 10px;
+            z-index: 2;
+            max-width: 25px;
+            max-width: 25px;
+            left: 8px;
+            top: 15px;
+            @include before_circle_d;
+
+            &:before {
+                content: '';
+                left: -8px;
+                top: -50%;
+            }
+        }
+
+        &-body {
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.about {
+    padding-top: 120px;
+    min-height: 720px;
+    background-color: $main_color_1;
+
+    &__wrapper {
+        margin: 0 auto;
+        padding-right: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1.21fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "about__photo about__bio"
+            "about__photo about__xp";
+    }
+
+    #about__photo {
+        grid-area: about__photo;
+    }
+
+    #about__bio {
+        grid-area: about__bio;
+    }
+
+    #about__xp {
+        grid-area: about__xp;
+    }
+
+    &__photo {
+        img {
+            height: 100%;
+        }
+    }
+
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle_d;
+    }
+
+    .divider {
+        margin: 0;
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        color: $main_color_2;
+    }
+
+    &__xp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 20px;
+
+        &__block {
+            display: flex;
+            flex-direction: row;
+            width: 45%;
+
+            svg path {
+                fill: $main_color_2;
+            }
+        }
+
+        &_icon {
+            position: relative;
+            padding-left: 10px;
+            z-index: 2;
+            max-width: 25px;
+            max-width: 25px;
+            @include before_circle_d;
+
+            &:before {
+                content: '';
+                left: -8px;
+                top: -5%;
+            }
+        }
+
+        &_item {
+            padding-left: 30px;
+        }
+
+        &_descr {
+            font-weight: 500;
+            font-size: 12px;
+            color: $main_color_2;
+        }
+    }
+}

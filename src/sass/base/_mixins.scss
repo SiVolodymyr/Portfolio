@@ -1,0 +1,29 @@
+@mixin before_circle_d {
+    &:before {
+        content: '';
+        position: absolute;
+        border-radius: 20%;
+        z-index: -1;
+        left: 0;
+        top: -25%;
+        width: 36px;
+        height: 36px;
+        border: 2px solid $main_color_2;
+        // background-color: $main_color_2;
+    }
+}
+
+@mixin before_circle {
+    &:before {
+        content: '';
+        position: absolute;
+        border-radius: 20%;
+        z-index: -1;
+        left: 0;
+        top: -25%;
+        width: 36px;
+        height: 36px;
+        border: 2px solid $main_color_1;
+        // background-color: $main_color_1;
+    }
+}

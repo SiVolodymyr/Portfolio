@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Poppins';
+    font-display: swap;
+    src: local('Poppins 500'), local('Poppins-500'),
+        url('../../fonts/Poppins-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-display: swap;
+    src: local('Poppins 700'), local('Poppins-700'),
+        url('../../fonts/Poppins-Bold.ttf') format('tff');
+    font-weight: 700;
+    font-style: normal;
+}

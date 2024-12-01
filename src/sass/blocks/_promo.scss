@@ -1,0 +1,58 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/me.jpg') no-repeat 50%/cover;
+    padding-top: 600px;
+
+    &__title {
+        width: 450px;
+        color: $main_color_1;
+        margin-top: 20px;
+    }
+
+    .promo__title {
+        line-height: 30px;
+        font-size: 30px;
+    }
+
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
+
+    .promo__subtitle {
+        font-size: 30px;
+    }
+
+    &__btns {
+        margin-top: 25px;
+        display: flex;
+        width: 250px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__link {
+        color: $main_color_2;
+        font-weight: bold;
+        transition: all .5s;
+
+
+
+        &:hover {
+            color: $main_color_2;
+            text-decoration: none;
+        }
+
+        &_w {
+            color: $main_color_1;
+
+            &:hover {
+                color: rgba($color: $main_color_1, $alpha: .3);
+                text-decoration: none;
+            }
+        }
+    }
+}
